@@ -78,19 +78,6 @@ PHP_SDO_API zend_class_entry *sdo_cppexception_class_entry;
 
 
 
-/* {{{SDO_DAS_ChangeSummary methods */
-function_entry sdo_das_changesummary_methods[] = {
-	ZEND_ME(SDO_DAS_ChangeSummary, beginLogging, 0, ZEND_ACC_PUBLIC)
-	ZEND_ME(SDO_DAS_ChangeSummary, endLogging, 0, ZEND_ACC_PUBLIC)
-	ZEND_ME(SDO_DAS_ChangeSummary, isLogging, 0, ZEND_ACC_PUBLIC)
-	ZEND_ME(SDO_DAS_ChangeSummary, getChangedDataObjects, 0, ZEND_ACC_PUBLIC)
-	ZEND_ME(SDO_DAS_ChangeSummary, getChangeType, arginfo_sdo_dataobject, ZEND_ACC_PUBLIC)
-	ZEND_ME(SDO_DAS_ChangeSummary, getOldValues, arginfo_sdo_dataobject, ZEND_ACC_PUBLIC)
-	ZEND_ME(SDO_DAS_ChangeSummary, getOldContainer, arginfo_sdo_dataobject, ZEND_ACC_PUBLIC)
-	{NULL, NULL, NULL}
-};
-/* }}} */
-
 /* {{{ SDO_DASSetting methods */
 function_entry sdo_das_setting_methods[] = {
 	ZEND_ME(SDO_DAS_Setting, getPropertyIndex, 0, ZEND_ACC_PUBLIC)
