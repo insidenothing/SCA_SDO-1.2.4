@@ -83,7 +83,7 @@ PHP_SDO_API zend_class_entry *sdo_cppexception_class_entry;
 
 
 /* {{{ SDO_Sequence methods */
-function_entry sdo_sequence_methods[] = {
+zend_function_entry sdo_sequence_methods[] = {
 	ZEND_ABSTRACT_ME(SDO_Sequence, getProperty, arginfo_sdo_sequence_getproperty)
 	ZEND_ABSTRACT_ME(SDO_Sequence, move, arginfo_sdo_sequence_move)
 	ZEND_ABSTRACT_ME(SDO_Sequence, insert, arginfo_sdo_sequence_insert)
