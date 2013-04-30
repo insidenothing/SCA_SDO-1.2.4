@@ -78,6 +78,18 @@ PHP_SDO_API zend_class_entry *sdo_cppexception_class_entry;
 
 
 
+/* {{{ SDO_DAS_DataFactory methods */
+
+
+
+function_entry sdo_das_datafactory_methods[] = {
+	ZEND_ME(SDO_DAS_DataFactory, getDataFactory, NULL, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
+	ZEND_ABSTRACT_ME(SDO_DAS_DataFactory, addType, arginfo_sdo_das_datafactory_addType)
+	ZEND_ABSTRACT_ME(SDO_DAS_DataFactory, addPropertyToType, arginfo_sdo_das_datafactory_addPropertyToType)
+	{NULL, NULL, NULL}
+};
+/* }}} */
+
 /* {{{SDO_DAS_ChangeSummary methods */
 function_entry sdo_das_changesummary_methods[] = {
 	ZEND_ME(SDO_DAS_ChangeSummary, beginLogging, 0, ZEND_ACC_PUBLIC)
