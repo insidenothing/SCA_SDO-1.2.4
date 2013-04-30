@@ -83,14 +83,7 @@ PHP_SDO_API zend_class_entry *sdo_cppexception_class_entry;
 
 
 
-/* {{{ SDO_List methods */
-function_entry sdo_list_methods[] = {
-	ZEND_ME(SDO_List, __construct, 0, ZEND_ACC_PRIVATE)
-	ZEND_ME(SDO_List, insert, arginfo_sdo_list_insert, ZEND_ACC_PUBLIC)
-	ZEND_ME(SDO_List, count, 0, ZEND_ACC_PUBLIC)
-	{NULL, NULL, NULL}
-};
-/* }}} */
+
 
 /* {{{ SDO_DataFactory methods */
 
