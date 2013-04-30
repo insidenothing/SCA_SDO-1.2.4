@@ -78,13 +78,6 @@ PHP_SDO_API zend_class_entry *sdo_cppexception_class_entry;
 
 
 
-/* {{{ SDO_DAS_DataObject methods */
-function_entry sdo_das_dataobject_methods[] = {
-	ZEND_ABSTRACT_ME(SDO_DAS_DataObject, getChangeSummary, 0)
-	{NULL, NULL, NULL}
-};
-/* }}} */
-
 /* {{{ SDO_DAS_DataFactory methods */
 
 
